@@ -1,0 +1,13 @@
+button {
+	color: black;
+	cursor: pointer;
+}
+
+#add-btn {
+	background-color: yellow;
+
+}
+
+#buy-btn {
+	background-color: orange;
+}
