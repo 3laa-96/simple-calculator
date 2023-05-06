@@ -1,33 +1,63 @@
 // Defined variables
-let total = 0;
-const showQuantity = document.getElementById("show-cart-btn");
-const addOneToCart = document.getElementById("add-one-to-cart-btn");
-const addTwoToCart = document.getElementById("add-two-to-cart-btn");
-const addThreeToCart = document.getElementById("add-three-to-cart-btn");
-const resetBtn = document.getElementById("reset-cart-btn");
+let calculator = "";
+const num1Btn = document.getElementById("num1");
+const num2Btn = document.getElementById("num2");
+const num3Btn = document.getElementById("num3");
+const plusBtn = document.getElementById("plusBtn");
+const minusBtn = document;
+const multiBtn = document.getElementById("multiBtn");
+const deviBtn = document.getElementById("deviBtn");
+const equalBtn = document.getElementById("equalBtn");
+const resetBtn = document.getElementById("resetBtn");
 
-showQuantity.addEventListener("click", function () {
-  console.log(`cart total: ${total}`);
+num1Btn.addEventListener("click", function () {
+  calculator += " 1 ";
+  console.log(calculator);
 });
 
-addOneToCart.addEventListener("click", function () {
-  total++;
-  console.log(`cart total: ${total}`);
+num2Btn.addEventListener("click", function () {
+  calculator += " 2 ";
+  console.log(calculator);
 });
 
-addTwoToCart.addEventListener("click", function () {
-  total += 2;
-  console.log(`cart total: ${total}`);
+num3Btn.addEventListener("click", function () {
+  calculator += " 3 ";
+  console.log(calculator);
 });
-
-addThreeToCart.addEventListener("click", function () {
-  total += 3;
-  console.log(`cart total: ${total}`);
+plusBtn.addEventListener("click", function () {
+  if (calculator) {
+    calculator += " + ";
+    console.log(calculator);
+  } else {
+    console.log("enter a number");
+  }
 });
-
+multiBtn.addEventListener("click", function () {
+  if (calculator) {
+    calculator += " * ";
+    console.log(calculator);
+  } else {
+    console.log("enter a number");
+  }
+});
+deviBtn.addEventListener("click", function () {
+  if (calculator) {
+    calculator += " / ";
+    console.log(calculator);
+  } else {
+    console.log("enter a number");
+  }
+});
 resetBtn.addEventListener("click", function () {
-  total = 0;
-  console.log(`cart total: ${total}`);
+  calculator = "";
+  console.clear();
 });
-
+equalBtn.addEventListener("click", function () {
+  if (calculator) {
+    calculator = eval(calculator);
+    console.log(calculator);
+  } else {
+    console.log("enter a number");
+  }
+});
 // 2:42:18

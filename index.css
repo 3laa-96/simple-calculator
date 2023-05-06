@@ -1,13 +1,11 @@
 button {
-	color: black;
-	cursor: pointer;
+	cursor: pointer
 }
 
-#add-btn {
-	background-color: yellow;
-
+#calculator-body {
+	display: flex;
+	align-items: center;
 }
-
-#buy-btn {
-	background-color: orange;
+button{
+	max-width: 25px;
 }
