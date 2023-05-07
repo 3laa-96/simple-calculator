@@ -105,7 +105,7 @@ equalBtn.addEventListener("click", function () {
     calculator = eval(calculator);
     calcDisplay.innerText = calculator;
   } else {
-    console.log("enter a number");
+    calcDisplay.innerText = calculator;
   }
 });
 // 2:42:18
